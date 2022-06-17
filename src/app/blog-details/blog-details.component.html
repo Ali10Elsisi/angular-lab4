@@ -1,0 +1,8 @@
+<div class="card mb-3">
+    <img [src]="blogDetails.image_url || defaultImage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{blogDetails.title}}</h5>
+      <p class="card-text">{{blogDetails.full_description}}</p>
+      <p class="card-text"><small class="text-muted">Last updated {{blogDetails.pubDate | date: "medium"}}</small></p>
+    </div>
+  </div>

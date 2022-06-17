@@ -1,0 +1,8 @@
+<div class="card">
+    <img [src]="blogItem.image_url || defaultImage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{blogItem.title}}</h5>
+      <p class="card-text">{{blogItem.description}}</p>
+    </div>
+    <button class="btn btn-info" (click)="goToDetails()">Go To Details</button>
+</div>
